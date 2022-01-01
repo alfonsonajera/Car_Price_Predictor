@@ -72,7 +72,48 @@ df_frontend = user_input_features()
 
 
 
+def main():
+    
+    
+    
+    # Main Panel
 
+    # Print specified input parameters
+    st.header('Specified Input parameters')
+    st.write(df_frontend)
+    st.write('---')
+
+    # Build Regression Model
+
+    df = pd.concat([df_frontend, X], axis=0).reset_index().drop('index', axis=1)
+
+    for col in ['Brand','Gear_type', 'Fuel_type','Type','Seller']:
+        df[col] = df[col].astype('category')
+
+    df = pd.get_dummies(data=df,columns=['Gear_type','Fuel_type','Type','Seller'])
+
+    encoder = TargetEncoder()
+
+
+    cols_to_encode = ['Brand','Model', 'Colour', 'Province']
+    cols_encoded = list(map(lambda c: c + '_encoded', cols_to_encode))
+
+    df[cols_encoded] = encoder.fit_transform(df[cols_to_encode], df.Year)
+
+    df.drop(['Brand','Model', 'Colour', 'Province'], axis = 1, inplace = True)
+
+    df_pred = df[:1]
+
+    # Apply Model to Make Prediction
+
+    prediction = model.predict(df_pred)
+
+    st.header('Prediction of MEDV')
+    st.write(prediction)
+    st.write('---')
+
+if __name__ == "__main__":
+    main()
 
 
 
