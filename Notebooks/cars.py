@@ -62,7 +62,6 @@
     "\n",
     "import pandas as pd\n",
     "import numpy as np\n",
-    "\n",
     "import matplotlib.pyplot as plt\n",
     "from sklearn import datasets\n",
     "from sklearn.ensemble import RandomForestRegressor"
