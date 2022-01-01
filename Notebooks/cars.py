@@ -35,7 +35,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "903779df",
+   "id": "8cce46f9",
    "metadata": {},
    "source": [
     "pip install watchdog"
@@ -51,15 +51,39 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 1,
+   "execution_count": 33,
+   "id": "49687477",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "UsageError: %%writefile is a cell magic, but the cell body is empty.\n"
+     ]
+    }
+   ],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
    "id": "2ef21a58",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Writing app.py\n"
+     ]
+    }
+   ],
    "source": [
+    "%%writefile app.py\n",
     "import streamlit as st\n",
     "import pickle\n",
     "import shap\n",
-    "\n",
     "import pandas as pd\n",
     "import numpy as np\n",
     "import matplotlib.pyplot as plt\n",
@@ -69,7 +93,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 3,
+   "execution_count": 35,
    "id": "8ef8b4bb",
    "metadata": {},
    "outputs": [],
@@ -79,28 +103,17 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 4,
+   "execution_count": 36,
    "id": "48b0bdb6",
    "metadata": {},
    "outputs": [
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "2022-01-01 17:48:11.396 \n",
-      "  \u001b[33m\u001b[1mWarning:\u001b[0m to view this Streamlit app on a browser, run it with the following\n",
-      "  command:\n",
-      "\n",
-      "    streamlit run /opt/anaconda3/envs/geo_env/lib/python3.9/site-packages/ipykernel_launcher.py [ARGUMENTS]\n"
-     ]
-    },
     {
      "data": {
       "text/plain": [
        "DeltaGenerator(_root_container=0, _provided_cursor=None, _parent=None, _block_type=None, _form_data=None)"
       ]
      },
-     "execution_count": 4,
+     "execution_count": 36,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -111,22 +124,21 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 5,
+   "execution_count": 37,
    "id": "c76545ab",
    "metadata": {},
    "outputs": [],
    "source": [
-    "\n",
     "st.write(\"\"\"\n",
     "# Boston House Price Prediction App\n",
     "This app predicts the **Boston House Price**!\n",
     "\"\"\")\n",
-    "st.write('---')\n"
+    "st.write('---')"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 6,
+   "execution_count": 38,
    "id": "3063e63c",
    "metadata": {},
    "outputs": [],
@@ -140,7 +152,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 7,
+   "execution_count": 15,
    "id": "ec4b6c76",
    "metadata": {},
    "outputs": [
@@ -150,7 +162,7 @@
        "DeltaGenerator(_root_container=1, _provided_cursor=None, _parent=DeltaGenerator(_root_container=0, _provided_cursor=None, _parent=None, _block_type=None, _form_data=None), _block_type=None, _form_data=None)"
       ]
      },
-     "execution_count": 7,
+     "execution_count": 15,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -163,7 +175,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 8,
+   "execution_count": 16,
    "id": "7265f65f",
    "metadata": {},
    "outputs": [],
@@ -209,12 +221,62 @@
     "    return features\n",
     "\n",
     "df_frontend = user_input_features()\n",
+    "\n",
     "\n"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 9,
+   "execution_count": 32,
+   "id": "9efa072a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def main():\n",
+    "    \n",
+    "    # Main Panel\n",
+    "\n",
+    "    # Print specified input parameters\n",
+    "    st.header('Specified Input parameters')\n",
+    "    st.write(df_frontend)\n",
+    "    st.write('---')\n",
+    "\n",
+    "    # Build Regression Model\n",
+    "\n",
+    "    df = pd.concat([df_frontend, X], axis=0).reset_index().drop('index', axis=1)\n",
+    "\n",
+    "    for col in ['Brand','Gear_type', 'Fuel_type','Type','Seller']:\n",
+    "        df[col] = df[col].astype('category')\n",
+    "\n",
+    "    df = pd.get_dummies(data=df,columns=['Gear_type','Fuel_type','Type','Seller'])\n",
+    "\n",
+    "    encoder = TargetEncoder()\n",
+    "\n",
+    "\n",
+    "    cols_to_encode = ['Brand','Model', 'Colour', 'Province']\n",
+    "    cols_encoded = list(map(lambda c: c + '_encoded', cols_to_encode))\n",
+    "\n",
+    "    df[cols_encoded] = encoder.fit_transform(df[cols_to_encode], df.Year)\n",
+    "\n",
+    "    df.drop(['Brand','Model', 'Colour', 'Province'], axis = 1, inplace = True)\n",
+    "\n",
+    "    df_pred = df[:1]\n",
+    "\n",
+    "    # Apply Model to Make Prediction\n",
+    "\n",
+    "    prediction = model.predict(df_pred)\n",
+    "\n",
+    "    st.header('Prediction of MEDV')\n",
+    "    st.write(prediction)\n",
+    "    st.write('---')\n",
+    "\n",
+    "if __name__ == \"__main__\":\n",
+    "    main()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
    "id": "5ced3ffb",
    "metadata": {},
    "outputs": [],
@@ -229,7 +291,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 10,
+   "execution_count": null,
    "id": "cf798e46",
    "metadata": {},
    "outputs": [],
@@ -239,7 +301,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 11,
+   "execution_count": 18,
    "id": "65d9f613",
    "metadata": {},
    "outputs": [
@@ -308,7 +370,7 @@
        "0          6      4  Beige  Barcelona  Dealer  "
       ]
      },
-     "execution_count": 11,
+     "execution_count": 18,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -319,7 +381,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 12,
+   "execution_count": 19,
    "id": "bd5651ac",
    "metadata": {},
    "outputs": [
@@ -361,19 +423,19 @@
        "  </thead>\n",
        "  <tbody>\n",
        "    <tr>\n",
-       "      <th>15130</th>\n",
-       "      <td>Mercedes-Benz</td>\n",
-       "      <td>B Class</td>\n",
-       "      <td>minivan</td>\n",
-       "      <td>2016</td>\n",
-       "      <td>125276</td>\n",
-       "      <td>109</td>\n",
+       "      <th>7463</th>\n",
+       "      <td>SsangYong</td>\n",
+       "      <td>Actyon</td>\n",
+       "      <td>suv</td>\n",
+       "      <td>2007</td>\n",
+       "      <td>138667</td>\n",
+       "      <td>141</td>\n",
        "      <td>Automatic</td>\n",
        "      <td>Diesel</td>\n",
-       "      <td>4.0</td>\n",
+       "      <td>8.5</td>\n",
        "      <td>5</td>\n",
-       "      <td>Silver</td>\n",
-       "      <td>Castellón</td>\n",
+       "      <td>Blue</td>\n",
+       "      <td>Málaga</td>\n",
        "      <td>Dealer</td>\n",
        "    </tr>\n",
        "  </tbody>\n",
@@ -381,14 +443,14 @@
        "</div>"
       ],
       "text/plain": [
-       "               Brand    Model     Type  Year     Kms   Hp  Gear_type  \\\n",
-       "15130  Mercedes-Benz  B Class  minivan  2016  125276  109  Automatic   \n",
+       "          Brand   Model Type  Year     Kms   Hp  Gear_type Fuel_type  \\\n",
+       "7463  SsangYong  Actyon  suv  2007  138667  141  Automatic    Diesel   \n",
        "\n",
-       "      Fuel_type  Fuel_cons  Doors  Colour   Province  Seller  \n",
-       "15130    Diesel        4.0      5  Silver  Castellón  Dealer  "
+       "      Fuel_cons  Doors Colour Province  Seller  \n",
+       "7463        8.5      5   Blue   Málaga  Dealer  "
       ]
      },
-     "execution_count": 12,
+     "execution_count": 19,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -399,7 +461,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 13,
+   "execution_count": 20,
    "id": "2ddb9d30",
    "metadata": {},
    "outputs": [],
@@ -409,7 +471,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 14,
+   "execution_count": 21,
    "id": "a92e2dd0",
    "metadata": {},
    "outputs": [],
@@ -420,7 +482,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 15,
+   "execution_count": 22,
    "id": "41aa30cf",
    "metadata": {},
    "outputs": [],
@@ -438,7 +500,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 16,
+   "execution_count": 23,
    "id": "ace370f9",
    "metadata": {},
    "outputs": [],
@@ -448,7 +510,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 17,
+   "execution_count": 24,
    "id": "a8f1d1c3",
    "metadata": {},
    "outputs": [],
@@ -458,7 +520,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 18,
+   "execution_count": 25,
    "id": "7a129b17",
    "metadata": {},
    "outputs": [],
@@ -471,7 +533,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 19,
+   "execution_count": 26,
    "id": "60619b4e",
    "metadata": {},
    "outputs": [],
@@ -482,7 +544,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 20,
+   "execution_count": 27,
    "id": "d0dd28e9",
    "metadata": {},
    "outputs": [],
@@ -492,7 +554,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 21,
+   "execution_count": 28,
    "id": "3cad908f",
    "metadata": {},
    "outputs": [
@@ -586,7 +648,7 @@
        "[1 rows x 28 columns]"
       ]
      },
-     "execution_count": 21,
+     "execution_count": 28,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -597,7 +659,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 22,
+   "execution_count": 29,
    "id": "783a2043",
    "metadata": {},
    "outputs": [],
@@ -613,7 +675,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 23,
+   "execution_count": 30,
    "id": "e69537b2",
    "metadata": {},
    "outputs": [],
@@ -629,7 +691,10 @@
    "id": "270466e1",
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "if __name__ == \"__main__\":\n",
+    "  main()"
+   ]
   },
   {
    "cell_type": "code",
