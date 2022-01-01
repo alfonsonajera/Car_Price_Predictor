@@ -13,7 +13,7 @@ st.sidebar.header('Specify Input Parameters')
 import pickle
 import pandas as pd
 import numpy as np
-from category_encoders import TargetEncoder
+import category_encoders
 
 
 
