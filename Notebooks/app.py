@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
-from category_encoders import TargetEncoder
+
 model = pickle.load(open('RF_price_predicting_model.pkl','rb'))
 st.write("""
 # Car Price Predictor
