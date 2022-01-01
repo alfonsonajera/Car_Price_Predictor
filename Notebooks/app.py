@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 import numpy as np
 
-model = pickle.load(open('RF_price_predicting_model.pkl','rb'))
+
 st.write("""
 # Car Price Predictor
 This app predicts **Used Cars Value**!
