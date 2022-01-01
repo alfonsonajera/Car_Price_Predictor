@@ -16,10 +16,10 @@ st.sidebar.header('Specify Input Parameters')
 
 
 
-model = pickle.load(open('/Users/alfon/Desktop/Master/TFM/Notebooks/RF_price_predicting_model.pkl','rb'))
+model = pickle.load(open('Notebooks/RF_price_predicting_model.pkl','rb'))
 
 # Loads the Used Cars Dataset
-cars_final = pd.read_csv('/users/alfon/Desktop/Master/TFM/CSV/03.cars_final_def.csv')
+cars_final = pd.read_csv('Csv/03.cars_final_def.csv')
 cars_final = cars_final.drop(['Version', 'ZIP'], axis=1)
 X= cars_final[cars_final.columns[:-1]]
 y= cars_final[cars_final.columns[-1]]
