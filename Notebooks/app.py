@@ -1,3 +1,4 @@
+pip freeze > requirements.txt file
 import streamlit as st
 
 st.write("""
