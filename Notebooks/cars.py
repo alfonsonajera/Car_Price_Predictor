@@ -35,6 +35,14 @@
   },
   {
    "cell_type": "markdown",
+   "id": "903779df",
+   "metadata": {},
+   "source": [
+    "pip install watchdog"
+   ]
+  },
+  {
+   "cell_type": "markdown",
    "id": "354e7759",
    "metadata": {},
    "source": [
@@ -58,53 +66,6 @@
     "import matplotlib.pyplot as plt\n",
     "from sklearn import datasets\n",
     "from sklearn.ensemble import RandomForestRegressor"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "0afe932f",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "ccd00731",
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "\u001b[0m\r\n",
-      "\u001b[34m\u001b[1m  Welcome to Streamlit. Check out our demo in your browser.\u001b[0m\r\n",
-      "\u001b[0m\r\n",
-      "\u001b[34m  Local URL: \u001b[0m\u001b[1mhttp://localhost:8501\u001b[0m\r\n",
-      "\u001b[34m  Network URL: \u001b[0m\u001b[1mhttp://192.168.86.25:8501\u001b[0m\r\n",
-      "\u001b[0m\r\n",
-      "  Ready to create your own Python apps super quickly?\u001b[0m\r\n",
-      "  Head over to \u001b[0m\u001b[1mhttps://docs.streamlit.io\u001b[0m\r\n",
-      "\u001b[0m\r\n",
-      "  May you create awesome apps!\u001b[0m\r\n",
-      "\u001b[0m\r\n",
-      "\u001b[0m\r\n"
-     ]
-    }
-   ],
-   "source": [
-    "\n",
-    "!streamlit hello\n",
-    "\n"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "id": "e02498d7",
-   "metadata": {},
-   "source": [
-    "pip install watchdog"
    ]
   },
   {
@@ -200,14 +161,6 @@
     "# Header of Specify Input Parameters\n",
     "st.sidebar.header('Specify Input Parameters')"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "12a68af6",
-   "metadata": {},
-   "outputs": [],
-   "source": []
   },
   {
    "cell_type": "code",
@@ -642,62 +595,6 @@
    "source": [
     "df_pred"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "3764f58e",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "955e213c",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "fab470e8",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "2109103e",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "eef0842d",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "0fb32cd9",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "f6233028",
-   "metadata": {},
-   "outputs": [],
-   "source": []
   },
   {
    "cell_type": "code",
