@@ -1,4 +1,3 @@
-!pip install category_encoders
 import streamlit as st
 
 st.write("""
