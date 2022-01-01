@@ -13,8 +13,8 @@ st.sidebar.header('Specify Input Parameters')
 import pickle
 import pandas as pd
 import numpy as np
-import category_encoders
 
+model = pickle.load(open('RF_price_predicting_model.pkl','rb'))
 
 
 
