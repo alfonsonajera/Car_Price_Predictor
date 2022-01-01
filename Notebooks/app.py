@@ -1,4 +1,8 @@
 import streamlit as st
+import pickle
+import pandas as pd
+import numpy as np
+from category_encoders import TargetEncoder
 
 st.write("""
 # Car Price Predictor
@@ -10,9 +14,7 @@ st.write('---')
 # Header of Specify Input Parameters
 st.sidebar.header('Specify Input Parameters')
 
-import pickle
-import pandas as pd
-import numpy as np
+
 
 model = pickle.load(open('/Users/alfon/Desktop/Master/TFM/Notebooks/RF_price_predicting_model.pkl','rb'))
 
