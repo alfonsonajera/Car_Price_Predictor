@@ -16,3 +16,10 @@ st.write("""
 This app predicts **Used Cars Value**!
 """)
 st.write('---')
+
+
+compressed_model = bz2.BZ2File("RF_price_predicting_model.pkl.pbz2", 'rb')
+model = cPickle.load(compressed_model)
+
+
+
