@@ -37,7 +37,7 @@ def user_input_features():
     YEAR = st.sidebar.slider('Year', int(X.Year.min()), int(X.Year.max()), int(X.Year.mean()))
     KMS = st.sidebar.slider('Kms', 0, 1000000, int(X.Kms.mean()))
     HP = st.sidebar.slider('Hp', 1, 1000, int(X.Hp.mean()))
-    TRANSMISSION = st.sidebar.radio('Transmission', (Automatic, Manual))
+    TRANSMISSION = st.sidebar.selectbox('Transmission', X.Gear_type.unique())
     FUEL = st.sidebar.selectbox('Fuel type', cars_final.Fuel_type.unique(), index=0)
     
     
