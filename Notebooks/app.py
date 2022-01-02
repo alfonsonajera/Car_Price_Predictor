@@ -34,7 +34,7 @@ def user_input_features():
     BRAND = st.sidebar.selectbox('Brand', np.sort(cars_final.Brand.unique()), index=0, help='Choose car brand')
     MODEL = st.sidebar.selectbox('Model', np.sort(cars_final[cars_final.Brand == BRAND].Model.unique()), index=0, help='Models available for the selected brand')
         
-    YEAR = st.sidebar.slider('Year', int(X.Year.min()), int(X.Year.max()), int(X.Year.mean()))
+    YEAR = st.sidebar.slider('Year', int(X.Year.min()), int(X.Year.max()), int(X.Year.mean()), step = 1000)
     KMS = st.sidebar.slider('Kms', 0, 1000000, int(X.Kms.mean()))
     HP = st.sidebar.slider('Hp', 1, 1000, int(X.Hp.mean()))
     TRANSMISSION = st.sidebar.selectbox('Transmission', X.Gear_type.unique())
