@@ -49,7 +49,7 @@ def user_input_features():
     
     
     PROVINCE = st.sidebar.selectbox('Province', cars_final.Province.unique(), index=0)
-    SELLER = st.sidebar.radio("Seller", (Dealer, Private))
+    SELLER = st.sidebar.radio("The number of owners the car had previously ?", (0, 1, 3), key='owner')
     
     
 
