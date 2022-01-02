@@ -31,12 +31,12 @@ y= cars_final[cars_final.columns[-1]]
 def user_input_features():
     
     
-    BRAND = st.sidebar.selectbox('Brand', np.sort(cars_final.Brand.unique()), index=0, help='Choose car brand')
-    MODEL = st.sidebar.selectbox('Model', np.sort(cars_final[cars_final.Brand == BRAND].Model.unique()), index=0, help='Models available for the selected brand')
+    BRAND = st.sidebar.selectbox('Brand', np.sort(cars_final.Brand.unique()), index=-3)
+    MODEL = st.sidebar.selectbox('Model', np.sort(cars_final[cars_final.Brand == BRAND].Model.unique()), index=0)
         
     YEAR = st.sidebar.slider('Year', int(X.Year.min()), int(X.Year.max()), int(X.Year.mean()))
-    KMS = st.sidebar.number_input('Kms', 0, 1000000, int(X.Kms.mean()), step = 500)
-    HP = st.sidebar.slider('Hp', 1, 1000, int(X.Hp.mean()))
+    KMS = st.sidebar.number_input('Kms', 0, 1000000, int(X.Kms.mean()), step = 10000)
+    HP = st.sidebar.slider('Power(Hp)', 1, 1000, int(X.Hp.mean()))
     TRANSMISSION = st.sidebar.selectbox('Transmission', X.Gear_type.unique())
     FUEL = st.sidebar.selectbox('Fuel type', cars_final.Fuel_type.unique(), index=0)
     
@@ -49,7 +49,7 @@ def user_input_features():
     
     
     PROVINCE = st.sidebar.selectbox('Province', cars_final.Province.unique(), index=0)
-    SELLER = st.sidebar.selectbox('Seller', X.Seller.unique())
+    SELLER = st.sidebar.radio("Seller", [Dealer, Private])
     
     
 
