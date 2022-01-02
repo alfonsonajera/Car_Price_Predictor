@@ -25,6 +25,7 @@ st.sidebar.header('Specify Input Parameters')
 # Loads the Used Cars Dataset
 cars_final = pd.read_csv('Csv/03.cars_final_def.csv')
 cars_final = cars_final.drop(['Version', 'ZIP'], axis=1)
+cars_final['Province'] = cars_final['Province'].fillna("Other")
 X= cars_final[cars_final.columns[:-1]]
 y= cars_final[cars_final.columns[-1]]
 
