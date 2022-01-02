@@ -42,7 +42,7 @@ def user_input_features():
     
     
     CONS = st.sidebar.slider('Fuel_cons', int(X.Fuel_cons.min()), int(X.Fuel_cons.max()), int(X.Fuel_cons.mean()))
-    DOORS = st.sidebar.slider('Doors', int(X.Doors.min()), int(X.Doors.max()), int(X.Doors.mean()))
+    DOORS = st.radio(0, 1, 3)
     COLOUR = st.sidebar.selectbox('Colour', cars_final.Colour.unique(), index=0)
     TYPE = st.sidebar.selectbox('Type', cars_final.Type.unique(), index=0)
     
