@@ -43,13 +43,13 @@ def user_input_features():
     
     
     CONS = st.sidebar.slider('Fuel cons', int(X.Fuel_cons.min()), int(X.Fuel_cons.max()), int(X.Fuel_cons.mean()))
-    DOORS = st.sidebar.slider('Doors', int(X.Doors.min()), int(X.Doors.max()), int(X.Doors.mean()))
-    COLOUR = st.sidebar.selectbox('Colour', cars_final.Colour.unique(), index=0)
+    DOORS = st.sidebar.slider('Doors', int(X.Doors.min()), int(X.Doors.max()), 5)
+    COLOUR = st.sidebar.selectbox('Colour', np.sort(cars_final.Colour.unique()), index=10)
     TYPE = st.sidebar.selectbox('Type', cars_final.Type.unique(), index=0)
     
     
     
-    PROVINCE = st.sidebar.selectbox('Province', cars_final.Province.unique(), index=0)
+    PROVINCE = st.sidebar.selectbox('Province', np.sort(cars_final.Province.unique()), index=0)
     SELLER = st.sidebar.radio("Seller", ("Dealer", "Private"))
     
     
