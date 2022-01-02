@@ -50,7 +50,7 @@ def user_input_features():
     
     
     
-    PROVINCE = st.sidebar.selectbox('Province', np.sort(cars_final.Province.unique()), index=1)
+    PROVINCE = st.sidebar.selectbox('Province', np.sort(cars_final.Province.unique()), index=10)
     SELLER = st.sidebar.radio("Seller", ("Dealer", "Private"))
     
     
