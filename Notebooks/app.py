@@ -121,7 +121,7 @@ def main():
 
     prediction = pd.DataFrame(model.predict(df_pred))
     prediction.columns = ['Price_EUR']
-    prediction = prediction.style.format("{.0f")
+    prediction = prediction.style.format("€")
   
 
     st.header('The predicted value for this cars is:')
