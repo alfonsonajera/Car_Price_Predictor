@@ -120,7 +120,8 @@ def main():
     # Apply Model to Make Prediction
 
     prediction = pd.DataFrame(model.predict(df_pred))
-    
+    prediction.columns = ['Price_EUR']
+    prediction = prediction.style.format('{:20,.0f}€')
 
     st.header('The predicted value for this cars is:')
     st.write(prediction)
