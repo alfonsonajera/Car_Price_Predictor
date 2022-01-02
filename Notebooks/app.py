@@ -33,7 +33,7 @@ y= cars_final[cars_final.columns[-1]]
 def user_input_features():
     
     
-    BRAND = st.sidebar.selectbox('Brand', np.sort(cars_final.Brand.unique()), index=8)
+    BRAND = st.sidebar.selectbox('Brand', np.sort(cars_final.Brand.unique()), "BMW")
     MODEL = st.sidebar.selectbox('Model', np.sort(cars_final[cars_final.Brand == BRAND].Model.unique()), index=0)
         
     YEAR = st.sidebar.slider('Year', int(X.Year.min()), int(X.Year.max()), int(X.Year.mean()))
