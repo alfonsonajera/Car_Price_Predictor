@@ -121,7 +121,7 @@ def main():
 
     prediction = model.predict(df_pred)
 
-    st.header('Prediction of MEDV')
+    st.header('The predicted value for this cars is:')
     st.write(prediction)
     st.write('---')
 
