@@ -36,7 +36,7 @@ def user_input_features():
     BRAND = st.sidebar.selectbox('Brand', np.sort(cars_final.Brand.unique()), index = 8)
     MODEL = st.sidebar.selectbox('Model', np.sort(cars_final[cars_final.Brand == BRAND].Model.unique()), index=0)
         
-    YEAR = st.sidebar.slider('Year', int(X.Year.min()), int(X.Year.max()), int(X.Year.mean()))
+    YEAR = st.sidebar.slider('Year', int(X.Year.min()), int(X.Year.max()), 2021)
     KMS = st.sidebar.number_input('Kms', 0, 1000000, 0, step = 1)
     HP = st.sidebar.slider('Power(Hp)', 0, 1000, 0)
     TRANSMISSION = st.sidebar.selectbox('Transmission', X.Gear_type.unique())
@@ -45,7 +45,7 @@ def user_input_features():
     
     CONS = st.sidebar.slider('Fuel cons', int(X.Fuel_cons.min()), int(X.Fuel_cons.max()), int(X.Fuel_cons.mean()))
     DOORS = st.sidebar.slider('Doors', int(X.Doors.min()), int(X.Doors.max()), 5)
-    COLOUR = st.sidebar.selectbox('Colour', np.sort(cars_final.Colour.unique()), index=10)
+    COLOUR = st.sidebar.selectbox('Colour', np.sort(cars_final.Colour.unique()), index=14)
     TYPE = st.sidebar.selectbox('Type', cars_final.Type.unique(), index=0)
     
     
