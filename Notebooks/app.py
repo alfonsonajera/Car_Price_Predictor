@@ -35,13 +35,13 @@ def user_input_features():
     MODEL = st.sidebar.selectbox('Model', np.sort(cars_final[cars_final.Brand == BRAND].Model.unique()), index=0, help='Models available for the selected brand')
         
     YEAR = st.sidebar.slider('Year', int(X.Year.min()), int(X.Year.max()), int(X.Year.mean()))
-    KMS = st.sidebar.number_input('Kms', 0, 1000000, int(X.Kms.mean()))
-    HP = st.sidebar.slider('Hp', int(X.Hp.min ()), int(X.Hp.max()), int(X.Hp.mean()))
-    TRANSMISSION = st.sidebar.selectbox('Gear_type', X.Gear_type.unique())
-    FUEL = st.sidebar.selectbox('Fuel_type', cars_final.Fuel_type.unique(), index=0)
+    KMS = st.sidebar.slider('Kms', 0, 1000000, int(X.Kms.mean()))
+    HP = st.sidebar.slider('Hp', 1, 1000, int(X.Hp.mean()))
+    TRANSMISSION = st.sidebar.radio('Transmission', (Automatic, Manual))
+    FUEL = st.sidebar.selectbox('Fuel type', cars_final.Fuel_type.unique(), index=0)
     
     
-    CONS = st.sidebar.slider('Fuel_cons', int(X.Fuel_cons.min()), int(X.Fuel_cons.max()), int(X.Fuel_cons.mean()))
+    CONS = st.sidebar.slider('Fuel cons', int(X.Fuel_cons.min()), int(X.Fuel_cons.max()), int(X.Fuel_cons.mean()))
     DOORS = st.sidebar.slider('Doors', int(X.Doors.min()), int(X.Doors.max()), int(X.Doors.mean()))
     COLOUR = st.sidebar.selectbox('Colour', cars_final.Colour.unique(), index=0)
     TYPE = st.sidebar.selectbox('Type', cars_final.Type.unique(), index=0)
