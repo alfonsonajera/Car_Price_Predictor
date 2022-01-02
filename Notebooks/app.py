@@ -33,12 +33,12 @@ y= cars_final[cars_final.columns[-1]]
 def user_input_features():
     
     
-    BRAND = st.sidebar.selectbox('Brand', np.sort(cars_final.Brand.unique()), "BMW")
+    BRAND = st.sidebar.selectbox('Brand', np.sort(cars_final.Brand.unique()), index = 8)
     MODEL = st.sidebar.selectbox('Model', np.sort(cars_final[cars_final.Brand == BRAND].Model.unique()), index=0)
         
     YEAR = st.sidebar.slider('Year', int(X.Year.min()), int(X.Year.max()), int(X.Year.mean()))
-    KMS = st.sidebar.number_input('Kms', 0, 1000000, int(X.Kms.mean()), step = 1)
-    HP = st.sidebar.slider('Power(Hp)', 1, 1000, int(X.Hp.mean()))
+    KMS = st.sidebar.number_input('Kms', 0, 1000000, 0, step = 1)
+    HP = st.sidebar.slider('Power(Hp)', 0, 1000, 0)
     TRANSMISSION = st.sidebar.selectbox('Transmission', X.Gear_type.unique())
     FUEL = st.sidebar.selectbox('Fuel type', cars_final.Fuel_type.unique(), index=0)
     
