@@ -119,7 +119,7 @@ def main():
 
     # Apply Model to Make Prediction
 
-    prediction = model.predict(df_pred)
+    prediction = pd.DataFrame(model.predict(df_pred))
     
 
     st.header('The predicted value for this cars is:')
