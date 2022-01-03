@@ -31,7 +31,7 @@ y= cars_final[cars_final.columns[-1]]
 
 
 def bmw():
-    st.image("Brads/BMW-logo.png", use_column_width=False)
+    st.image("Brads/bmw-logo.png", use_column_width=False)
 
 
 
