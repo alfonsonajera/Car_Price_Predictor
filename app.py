@@ -13,9 +13,9 @@ model = cPickle.load(compressed_model)
 
 
 st.write("""
-# VhehiCALC **This app predicts Used Cars Values!
+# VhehiCALC **** This app predicts Used Cars Values!
 """)
-st.image("vehicalc.png",use_column_width=False, caption = "This app predicts Used Cars Values!")
+st.image("vehicalc.png",use_column_width=False)
 st.write('---')
 
 # Sidebar
