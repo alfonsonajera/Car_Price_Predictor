@@ -95,7 +95,6 @@ def main():
     # Print specified input parameters
     st.header('Specified Input parameters')
     st.write(df_frontend)
-    st.image(image, width=None, use_column_width='always'))
     st.write('---')
 
     # Build Regression Model
