@@ -53,7 +53,7 @@ def user_input_features():
     PROVINCE = st.sidebar.selectbox('Province', np.sort(cars_final.Province.unique()), index=29)
     SELLER = st.sidebar.radio("Seller", ("Dealer", "Private"))
     
-    imag = 'BMW-logo.png'
+    
  
 
     
@@ -86,6 +86,8 @@ def user_input_features():
 
 df_frontend = user_input_features()
 
+
+imag = 'BMW-logo.png'
 
 def main():
     
