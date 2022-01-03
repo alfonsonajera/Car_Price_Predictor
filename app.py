@@ -86,7 +86,7 @@ def user_input_features():
 df_frontend = user_input_features()
 
 if df_frontend["Brand"] == "BMW":
-    image = "https://drive.google.com/uc?export=view&id=1cf6kuyI7QMg5VDDLlsbfL-Yrpi-OF_ap")
+    image = "https://drive.google.com/uc?export=view&id=1cf6kuyI7QMg5VDDLlsbfL-Yrpi-OF_ap"
 
 def main():
     
