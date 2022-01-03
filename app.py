@@ -46,7 +46,7 @@ def bmw():
 def citroen():
     st.image("Brands/citroen-logo.png", use_column_width=False)
 def ferrari():
-    st.image("Brands/ferrari.png", use_column_width=False)
+    st.image("Brands/ferrari-logo.png", use_column_width=False)
 def fiat():
     st.image("Brands/fiat-logo.png", use_column_width=False)
 def ford():
@@ -54,7 +54,7 @@ def ford():
 def honda():
     st.image("Brands/honda-logo.png", use_column_width=False)
 def hyundai():
-    st.image("Brands/hyundai.png", use_column_width=False)
+    st.image("Brands/hyundai-logo.png", use_column_width=False)
 def jaguar():
     st.image("Brands/jaguar-logo.png", use_column_width=False)
 def jeep():
@@ -62,7 +62,7 @@ def jeep():
 def kia():
     st.image("Brands/kia-logo.png", use_column_width=False)
 def landrover():
-    st.image("Brands/land-rover.png", use_column_width=False)
+    st.image("Brands/land-rover-logo.png", use_column_width=False)
 def mazda():
     st.image("Brands/mercedes-benz-logo.png", use_column_width=False)
 def mini():
@@ -70,23 +70,23 @@ def mini():
 def opel():
     st.image("Brands/opel-logo.png", use_column_width=False)
 def peugeot():
-    st.image("Brands/peugeot.png", use_column_width=False)
+    st.image("Brands/peugeot-logo.png", use_column_width=False)
 def porsche():
     st.image("Brands/porsche-logo.png", use_column_width=False)
 def renault():
     st.image("Brands/renault-logo.png", use_column_width=False)
 def seat():
-    st.image("Brands/seat.png", use_column_width=False)
+    st.image("Brands/seat-logo.png", use_column_width=False)
 def skoda():
-    st.image("Brands/skoda.png", use_column_width=False)
+    st.image("Brands/skoda-logo.png", use_column_width=False)
 def tesla():
     st.image("Brands/tesla-logo.png", use_column_width=False)
 def toyota():
     st.image("Brands/toyota-logo.png", use_column_width=False)
 def volkswagen():
-    st.image("Brands/volkswagen.png", use_column_width=False)
+    st.image("Brands/volkswagen-logo.png", use_column_width=False)
 def volvo():
-    st.image("Brands/volvo.png", use_column_width=False)
+    st.image("Brands/volvo-logo.png", use_column_width=False)
 def unknown():
     st.image("Brands/unknown-logo.png", use_column_width=False)
 
