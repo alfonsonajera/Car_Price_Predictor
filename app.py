@@ -27,8 +27,7 @@ st.sidebar.header('Specify Input Parameters')
 
 # Print specified input parameters
 st.header('Specified Input parameters')
-st.write(df_frontend)
-st.write('---')
+
 
 # Loads the Used Cars Dataset
 cars_final = pd.read_csv('Csv/03.cars_final_def.csv')
@@ -96,7 +95,10 @@ df_frontend = user_input_features()
     
 def main():
     
-    
+    # Print specified input parameters
+ 
+    st.write(df_frontend)
+    st.write('---')
 
 
     # Build Regression Model
