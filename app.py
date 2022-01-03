@@ -37,10 +37,56 @@ X= cars_final[cars_final.columns[:-1]]
 y= cars_final[cars_final.columns[-1]]
 
 
+def alfaromeo():
+    st.image("Brands/alfa-romeo-logo.png", use_column_width=False)
+def audi():
+    st.image("Brands/audi-logo.png", use_column_width=False)
 def bmw():
     st.image("Brands/bmw-logo.png", use_column_width=False)
+def citroen():
+    st.image("Brands/citroen-logo.png", use_column_width=False)
+def ferrari():
+    st.image("Brands/ferrari.png", use_column_width=False)
+def fiat():
+    st.image("Brands/fiat-logo.png", use_column_width=False)
+def ford():
+    st.image("Brands/ford-logo.png", use_column_width=False)
+def honda():
+    st.image("Brands/honda-logo.png", use_column_width=False)
+def hyundai():
+    st.image("Brands/hyundai.png", use_column_width=False)
+def jaguar():
+    st.image("Brands/jaguar-logo.png", use_column_width=False)
+def jeep():
+    st.image("Brands/jeep-logo.png", use_column_width=False)
+def kia():
+    st.image("Brands/kia-logo.png", use_column_width=False)
+def landrover():
+    st.image("Brands/land-rover.png", use_column_width=False)
+def mazda():
+    st.image("Brands/mercedes-benz-logo.png", use_column_width=False)
+def mini():
+    st.image("Brands/mini-logo.png", use_column_width=False)
+def opel():
+    st.image("Brands/opel-logo.png", use_column_width=False)
+def peugeot():
+    st.image("Brands/peugeot.png", use_column_width=False)
 def porsche():
     st.image("Brands/porsche-logo.png", use_column_width=False)
+def renault():
+    st.image("Brands/renault-logo.png", use_column_width=False)
+def seat():
+    st.image("Brands/seat.png", use_column_width=False)
+def skoda():
+    st.image("Brands/skoda.png", use_column_width=False)
+def tesla():
+    st.image("Brands/tesla-logo.png", use_column_width=False)
+def toyota():
+    st.image("Brands/toyota-logo.png", use_column_width=False)
+def volkswagen():
+    st.image("Brands/volkswagen.png", use_column_width=False)
+def volvo():
+    st.image("Brands/volvo.png", use_column_width=False)
 def unknown():
     st.image("Brands/unknown-logo.png", use_column_width=False)
 
@@ -54,10 +100,56 @@ def user_input_features():
     
     BRAND = st.sidebar.selectbox('Brand', np.sort(cars_final.Brand.unique()), index = 8)
     
-    if BRAND == "BMW":
+    if BRAND == "Alfa-Romeo":
+        alfaromeo()
+    elif BRAND == "Audi":
+        audi()
+    elif BRAND == "BMW":
         bmw()
+    elif BRAND == "Citroen":
+        citroen()
+    elif BRAND == "Ferrari":
+        ferrari()
+    elif BRAND == "Fiat":
+        fiat()
+    elif BRAND == "Ford":
+        ford()
+    elif BRAND == "Honda":
+        honda()
+    elif BRAND == "Hyundai":
+        hyundai()
+    elif BRAND == "Jaguar":
+        jaguar()
+    elif BRAND == "Jeep":
+        jeep()
+    elif BRAND == "KIA":
+        kia() 
+    elif BRAND == "Land-Rover":
+        landrover()
+    elif BRAND == "Mazda":
+        mazda()
+    elif BRAND == "Mini":
+        mini()
+    elif BRAND == "Opel":
+        opel()
+    elif BRAND == "Peugeot":
+        peugeot()
     elif BRAND == "Porsche":
         porsche()
+    elif BRAND == "Renault":
+        renault()
+    elif BRAND == "Seat":
+        seat()
+    elif BRAND == "Skoda":
+        skoda()
+    elif BRAND == "Tesla":
+        tesla()
+    elif BRAND == "Toyota":
+        toyota()
+    elif BRAND == "Volkswagen":
+        volkswagen() 
+    elif BRAND == "Volvo":
+        volvo()
     else:
         unknown()
         
