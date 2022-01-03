@@ -29,7 +29,10 @@ cars_final['Province'] = cars_final['Province'].fillna("Other")
 X= cars_final[cars_final.columns[:-1]]
 y= cars_final[cars_final.columns[-1]]
 
-
+def bmw():
+    st.image("Brands/bmw-logo.png", use_column_width=False)
+def porsche():
+    st.image("Brands/porsche-logo.png", use_column_width=False)
 
 def user_input_features():
     
@@ -82,11 +85,6 @@ def user_input_features():
 df_frontend = user_input_features()
 
 
-    
-def bmw():
-    st.image("Brands/bmw-logo.png", use_column_width=False)
-def porsche():
-    st.image("Brands/porsche-logo.png", use_column_width=False)
     
 def main():
     
