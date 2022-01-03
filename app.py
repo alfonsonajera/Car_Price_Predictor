@@ -123,7 +123,8 @@ def main():
 
     prediction = pd.DataFrame(model.predict(df_pred))
     prediction.columns = ['Price_EUR']
-    pd.options.display.float_format = '{:,.0f}€'.format
+    prediction['Price_EUR']= prediction['Price_EUR'].map('€{:,.0f}'.format)
+
 
 
 
