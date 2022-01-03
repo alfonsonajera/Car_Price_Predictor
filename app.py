@@ -42,7 +42,7 @@ def bmw():
 def porsche():
     st.image("Brands/porsche-logo.png", use_column_width=False)
 def unknown():
-    st.image("Brands/unknown.png", use_column_width=False)
+    st.image("Brands/unknown-logo.png", use_column_width=False)
 
     
 
