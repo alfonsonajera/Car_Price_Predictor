@@ -34,6 +34,8 @@ def user_input_features():
     
     
     BRAND = st.sidebar.selectbox('Brand', np.sort(cars_final.Brand.unique()), index = 8)
+    if BRAND == "BMW":
+        imag = 'BMW-logo.png'
     MODEL = st.sidebar.selectbox('Model', np.sort(cars_final[cars_final.Brand == BRAND].Model.unique()), index=0)
         
     YEAR = st.sidebar.slider('Year', int(X.Year.min()), int(X.Year.max()), 2021)
@@ -75,8 +77,7 @@ def user_input_features():
 
 df_frontend = user_input_features()
 
-if BRAND == "BMW":
-    imag = 'BMW-logo.png'
+
    
 
 def main():
