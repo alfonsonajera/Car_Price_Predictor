@@ -11,7 +11,15 @@ compressed_model = bz2.BZ2File("Files/RF_price_predicting_model.pkl.pbz2", 'rb')
 model = cPickle.load(compressed_model)
 
 
-
+title_container = st.beta_container()
+        col1, col2 = st.beta_columns([1, 20])
+        image = "vehicalc.png"
+        with title_container:
+            with col1:
+                st.image(image, width=64)
+            with col2:
+                st.markdown('<h1 style="color: purple;">Suzieq</h1>',
+                            unsafe_allow_html=True)
 st.write("""
 # VhehiCALC
 This app predicts **Used Cars Values**!
