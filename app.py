@@ -30,11 +30,6 @@ X= cars_final[cars_final.columns[:-1]]
 y= cars_final[cars_final.columns[-1]]
 
 
-def bmw():
-    st.image("Brands/bmw-logo.png", use_column_width=False)
-def porsche():
-    st.image("Brands/porsche-logo.png", use_column_width=False)
-
 
 def user_input_features():
     
@@ -97,6 +92,12 @@ def main():
     # Print specified input parameters
     st.header('Specified Input parameters')
     st.write(df_frontend)
+    
+    def bmw():
+        st.image("Brands/bmw-logo.png", use_column_width=False)
+    def porsche():
+        st.image("Brands/porsche-logo.png", use_column_width=False)
+    
     st.write('---')
 
     # Build Regression Model
