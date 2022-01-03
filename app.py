@@ -85,7 +85,8 @@ def user_input_features():
 
 df_frontend = user_input_features()
 
-
+if df_frontend["Brand"] = "BMW":
+    image = "BMW-logo.png")
 
 def main():
     
@@ -96,6 +97,7 @@ def main():
     # Print specified input parameters
     st.header('Specified Input parameters')
     st.write(df_frontend)
+    st.image(image)
     st.write('---')
 
     # Build Regression Model
