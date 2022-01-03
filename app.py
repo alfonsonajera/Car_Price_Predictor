@@ -100,7 +100,7 @@ def main():
 
     # Build Regression Model
 
-    df = pd.concat([df_frontend, X], axis=0).reset_index().drop('index', axis=1)
+    df = pd.concat([df_frontend, cars_final], axis=0).reset_index().drop('index', axis=1)
 
     for col in ['Brand','Gear_type', 'Fuel_type','Type','Seller']:
         df[col] = df[col].astype('category')
@@ -113,9 +113,9 @@ def main():
     cols_to_encode = ['Brand','Model', 'Colour', 'Province']
     cols_encoded = list(map(lambda c: c + '_encoded', cols_to_encode))
 
-    df[cols_encoded] = encoder.fit_transform(df[cols_to_encode], df.Year)
+    df[cols_encoded] = encoder.fit_transform(df[cols_to_encode], df.Price_EUR)
 
-    df.drop(['Brand','Model', 'Colour', 'Province'], axis = 1, inplace = True)
+    df.drop(['Brand','Model', 'Colour', 'Province', 'Price_EUR'], axis = 1, inplace = True)
 
     df_pred = df[:1]
 
