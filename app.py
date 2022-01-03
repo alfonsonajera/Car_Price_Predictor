@@ -56,7 +56,7 @@ def user_input_features():
     
     if BRAND == "BMW":
         bmw()
-    if BRAND == "Porsche":
+    elif BRAND == "Porsche":
         porsche()
     else:
         unknown()
