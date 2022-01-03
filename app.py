@@ -34,6 +34,10 @@ def user_input_features():
     
     
     BRAND = st.sidebar.selectbox('Brand', np.sort(cars_final.Brand.unique()), index = 8)
+    
+    if BRAND == "BMW":
+        defbmw()
+        
     MODEL = st.sidebar.selectbox('Model', np.sort(cars_final[cars_final.Brand == BRAND].Model.unique()), index=0)
         
     YEAR = st.sidebar.slider('Year', int(X.Year.min()), int(X.Year.max()), 2021)
@@ -53,8 +57,6 @@ def user_input_features():
     PROVINCE = st.sidebar.selectbox('Province', np.sort(cars_final.Province.unique()), index=29)
     SELLER = st.sidebar.radio("Seller", ("Dealer", "Private"))
     
-    if BRAND == "BMW":
-        imag = 'BMW-logo.png'
     
     
     data = {'Brand': BRAND,
@@ -76,7 +78,8 @@ def user_input_features():
 
 df_frontend = user_input_features()
 
-  
+defbmw()
+st.image("BMW-logo.png", use_column_width=True)
 
 def main():
     
@@ -87,7 +90,6 @@ def main():
     # Print specified input parameters
     st.header('Specified Input parameters')
     st.write(df_frontend)
-    st.image(imag, use_column_width=True)
     st.write('---')
 
     # Build Regression Model
