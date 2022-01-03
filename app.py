@@ -75,7 +75,7 @@ def user_input_features():
 
 df_frontend = user_input_features()
 
-image = "BMW-logo.png"
+imag = "BMW-logo.png"
 
    
 
