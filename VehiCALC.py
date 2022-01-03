@@ -7,7 +7,7 @@ import bz2
 import _pickle as cPickle
 
 
-compressed_model = bz2.BZ2File("RF_price_predicting_model.pkl.pbz2", 'rb')
+compressed_model = bz2.BZ2File("Files/RF_price_predicting_model.pkl.pbz2", 'rb')
 model = cPickle.load(compressed_model)
 
 st.write("""
@@ -17,7 +17,7 @@ This app predicts **Used Cars Values**!
 st.write('---')
 
 # Loads the Used Cars Dataset
-cars_final = pd.read_csv('/users/alfon/Desktop/Master/TFM/CSV/03.cars_final_def.csv')
+cars_final = pd.read_csv('Csv/03.cars_final_def.csv')
 cars_final = cars_final.drop(['Version', 'ZIP'], axis=1)
 cars_final['Province'] = cars_final['Province'].fillna("Other")
 X= cars_final[cars_final.columns[:-1]]
