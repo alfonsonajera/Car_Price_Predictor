@@ -53,7 +53,10 @@ def user_input_features():
     PROVINCE = st.sidebar.selectbox('Province', np.sort(cars_final.Province.unique()), index=29)
     SELLER = st.sidebar.radio("Seller", ("Dealer", "Private"))
     
-    
+    if BRAND = "BMW":
+        imag = 'BMW-logo.png'
+    else:
+        imag = ""
 
     
     
@@ -95,6 +98,7 @@ def main():
     # Print specified input parameters
     st.header('Specified Input parameters')
     st.write(df_frontend)
+    st.image(image,use_column_width=True)
     st.write('---')
 
     # Build Regression Model
