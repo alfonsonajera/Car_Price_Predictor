@@ -31,8 +31,9 @@ y= cars_final[cars_final.columns[-1]]
 
 
 def bmw():
-    st.image("Brads/bmw-logo.png", use_column_width=False)
-
+    st.image("Brands/bmw-logo.png", use_column_width=False)
+def porsche():
+    st.image("Brands/porsche-logo.png", use_column_width=False)
 
 
 def user_input_features():
@@ -42,7 +43,8 @@ def user_input_features():
     
     if BRAND == "BMW":
         bmw()
-       
+     if BRAND == "Porsche":
+        porsche()
         
     MODEL = st.sidebar.selectbox('Model', np.sort(cars_final[cars_final.Brand == BRAND].Model.unique()), index=0)
         
