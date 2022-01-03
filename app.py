@@ -54,7 +54,7 @@ def user_input_features():
     SELLER = st.sidebar.radio("Seller", ("Dealer", "Private"))
     
     if BRAND == "BMW":
-        bmwimage()
+        imag = 'BMW-logo.png'
     
     
     data = {'Brand': BRAND,
@@ -76,12 +76,7 @@ def user_input_features():
 
 df_frontend = user_input_features()
 
-
-def bmwimage():
-    
-    imag = "BMW-logo.png"
-
-   
+  
 
 def main():
     
