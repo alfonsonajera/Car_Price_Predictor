@@ -30,13 +30,19 @@ X= cars_final[cars_final.columns[:-1]]
 y= cars_final[cars_final.columns[-1]]
 
 
+def bmw():
+    st.image("BMW-logo.png", use_column_width=True)
+
+
+
 def user_input_features():
     
     
     BRAND = st.sidebar.selectbox('Brand', np.sort(cars_final.Brand.unique()), index = 8)
     
     if BRAND == "BMW":
-        defbmw()
+        bmw()
+       
         
     MODEL = st.sidebar.selectbox('Model', np.sort(cars_final[cars_final.Brand == BRAND].Model.unique()), index=0)
         
@@ -78,8 +84,7 @@ def user_input_features():
 
 df_frontend = user_input_features()
 
-def defbmw():
-    st.image("BMW-logo.png", use_column_width=True)
+
 
 def main():
     
