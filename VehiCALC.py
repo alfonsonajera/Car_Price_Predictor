@@ -5,7 +5,7 @@ import numpy as np
 from category_encoders import TargetEncoder
 import bz2
 import _pickle as cPickle
-import shapv
+
 
 compressed_model = bz2.BZ2File("RF_price_predicting_model.pkl.pbz2", 'rb')
 model = cPickle.load(compressed_model)
