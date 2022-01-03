@@ -123,6 +123,9 @@ def main():
 
     prediction = pd.DataFrame(model.predict(df_pred))
     prediction.columns = ['Price_EUR']
+    prediction = prediction.round(decimals = 0)
+    prediction['Price_EUR'] = prediction['Price_EUR'].astype(str).apply(lambda x: x.replace('.0',' €'))
+    
   
   
 
