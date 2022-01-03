@@ -78,8 +78,8 @@ def user_input_features():
 
 df_frontend = user_input_features()
 
-defbmw()
-st.image("BMW-logo.png", use_column_width=True)
+def defbmw():
+    st.image("BMW-logo.png", use_column_width=True)
 
 def main():
     
