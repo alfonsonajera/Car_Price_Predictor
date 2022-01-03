@@ -36,12 +36,20 @@ cars_final['Province'] = cars_final['Province'].fillna("Other")
 X= cars_final[cars_final.columns[:-1]]
 y= cars_final[cars_final.columns[-1]]
 
+
 def bmw():
     st.image("Brands/bmw-logo.png", use_column_width=False)
 def porsche():
     st.image("Brands/porsche-logo.png", use_column_width=False)
+def unknown():
+    st.image("Brands/unknown.png", use_column_width=False)
 
-def user_input_features():
+    
+
+    
+    
+    
+ def user_input_features():
     
     
     BRAND = st.sidebar.selectbox('Brand', np.sort(cars_final.Brand.unique()), index = 8)
@@ -50,6 +58,8 @@ def user_input_features():
         bmw()
     if BRAND == "Porsche":
         porsche()
+    else:
+        unknown()
         
     MODEL = st.sidebar.selectbox('Model', np.sort(cars_final[cars_final.Brand == BRAND].Model.unique()), index=0)
         
