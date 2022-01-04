@@ -248,19 +248,18 @@ def main():
     st.write('---')
     
     # Explaining the model's predictions using SHAP values
-    # https://github.com/slundberg/shap
+    
+    st.header('Feature Importance')
+
     explainer = shap.TreeExplainer(model)
     shap_values = explainer.shap_values(df_pred)
     
-    col1, col2= st.columns(2)
-        
-    with col1:
-        st.write('Features impact to the model')
-        st.image("Figs/0.7_Shap_summary_plot_bar.png")
+    plt.title('Feature importance based on SHAP values (Bar)')
+    shap.summary_plot(shap_values, df_pred, plot_type="bar", show=False)
     
-    with col2:
-        st.write(' ')
-        st.image("Figs/0.7_Shap_summary_plot.png")
+
+
+
 
     st.write('---')
     
