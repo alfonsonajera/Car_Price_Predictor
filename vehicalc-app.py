@@ -13,7 +13,7 @@ model = cPickle.load(compressed_model)
 
 
 st.write("""
-# VhehiCALC
+# VehiCALC
 This app predicts **Used Cars Values**!
 """)
 st.write('---')
