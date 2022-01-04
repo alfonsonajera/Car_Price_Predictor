@@ -245,18 +245,18 @@ def main():
     st.header('The predicted value for this cars is:')
     st.write(prediction)
     st.write('---')
-    explainer = shap.TreeExplainer(cPickle.load(bz2.BZ2File("Files/RF_price_predicting_model.pkl.pbz2", 'rb')))
-    shap_values = explainer.shap_values(df)
+
+    
+    compressed_model = bz2.BZ2File("Files/RF_price_predicting_model.pkl.pbz2", 'rb')
+    model = cPickle.load(compressed_model)
+    explainer = shap.TreeExplainer(model)
+    shap_values = explainer.shap_values(df_pred)
 
     st.header('Feature Importance')
     plt.title('Feature importance based on SHAP values')
-    shap.summary_plot(shap_values, df)
+    shap.summary_plot(shap_values, df_pred)
     st.pyplot(bbox_inches='tight')
     st.write('---')
-
-    plt.title('Feature importance based on SHAP values (Bar)')
-    shap.summary_plot(shap_values, df, plot_type="bar")
-    st.pyplot(bbox_inches='tight')
     
     
 
