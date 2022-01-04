@@ -256,10 +256,7 @@ def main():
     
     plt.title('Feature importance based on SHAP values (Bar)')
     shap.summary_plot(shap_values, df_pred, plot_type="bar", show=False)
-    
-
-
-
+    st.pyplot(bbox_inches='tight')
 
     st.write('---')
     
