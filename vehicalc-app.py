@@ -246,6 +246,21 @@ def main():
     st.write(prediction)
     st.write('---')
     
+    # Explaining the model's predictions using SHAP values
+
+    explainer = shap.TreeExplainer(model)
+    shap_values = explainer.shap_values(df)
+
+    st.header('Feature Importance')
+    plt.title('Feature importance based on SHAP values')
+    shap.summary_plot(shap_values, df)
+    st.pyplot(bbox_inches='tight')
+    st.write('---')
+
+    plt.title('Feature importance based on SHAP values (Bar)')
+    shap.summary_plot(shap_values, df, plot_type="bar")
+    st.pyplot(bbox_inches='tight')
+    
     
 
 if __name__ == "__main__":
