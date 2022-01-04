@@ -263,7 +263,7 @@ def main():
 
     with col2:
         
-        st.image("Figs/0.7_Shap_summary_plot.png")
+        
 
     
 
