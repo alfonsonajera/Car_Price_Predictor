@@ -17,6 +17,7 @@ st.write("""
 This app predicts **Used Cars Values**!
 """)
 st.image("vehicalc.png",use_column_width=False)
+st.write('---')
 
 
 # Sidebar
@@ -201,6 +202,7 @@ def main():
     # Print specified input parameters
  
     st.write(df_frontend)
+    st.write('---')
  
 
 
