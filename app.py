@@ -128,7 +128,7 @@ def user_input_features():
         landrover()
     elif BRAND == "Mazda":
         mazda()
-    elif BRAND == "Mini":
+    elif BRAND == "MINI":
         mini()
     elif BRAND == "Opel":
         opel()
@@ -138,7 +138,7 @@ def user_input_features():
         porsche()
     elif BRAND == "Renault":
         renault()
-    elif BRAND == "Seat":
+    elif BRAND == "SEAT":
         seat()
     elif BRAND == "Skoda":
         skoda()
