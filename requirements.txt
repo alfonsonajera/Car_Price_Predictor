@@ -9,3 +9,4 @@ lxml==4.6.2
 requests==2.25.1
 htbuilder==0.5.0
 shap==0.36.0
+matplotlib==3.3.3
