@@ -2,6 +2,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 from category_encoders import TargetEncoder
 import bz2
 import _pickle as cPickle
