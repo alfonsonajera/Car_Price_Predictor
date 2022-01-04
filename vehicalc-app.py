@@ -255,10 +255,16 @@ def main():
     col1, col2= st.columns(2)
 
     with col1:
-        st.set_option('deprecation.showPyplotGlobalUse', False)
-        plt.title('Prediction Feature importance based on SHAP values (Bar)')
-        shap.summary_plot(shap_values, df_pred, plot_type="bar")
-        st.pyplot(bbox_inches='tight')
+        st.header("A cat")
+        st.image("https://static.streamlit.io/examples/cat.jpg")
+
+    with col2:
+        st.header("A dog")
+        st.image("https://static.streamlit.io/examples/dog.jpg")
+    
+  
+
+
 
  
         
