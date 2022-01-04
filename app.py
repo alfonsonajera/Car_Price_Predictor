@@ -15,7 +15,6 @@ st.image("vehicalc.png",use_column_width=False)
 st.write("""
 This app predicts **Used Cars Values**!
 """)
-st.image("vehicalc.png",use_column_width=False)
 st.write('---')
 
 
