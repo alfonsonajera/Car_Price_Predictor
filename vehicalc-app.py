@@ -249,11 +249,11 @@ def main():
 
     
     explainer = shap.TreeExplainer(model)
-    shap_values = explainer.shap_values(df_pred)
+    shap_values = explainer.shap_values(df)
 
     st.header('Feature Importance')
     plt.title('Feature importance based on SHAP values')
-    shap.summary_plot(shap_values, df_pred)
+    shap.summary_plot(shap_values, df)
     st.pyplot(bbox_inches='tight')
     st.write('---')
     
