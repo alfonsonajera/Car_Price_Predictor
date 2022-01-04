@@ -255,12 +255,14 @@ def main():
     col1, col2= st.columns(2)
         
     with col1:
+        st.subheader('Parameters impact to the prediction')
         st.set_option('deprecation.showPyplotGlobalUse', False)
         plt.title('Prediction Feature importance based on SHAP values (Bar)')
         shap.summary_plot(shap_values, df_pred, plot_type="bar")
         st.pyplot(bbox_inches='tight')
     
     with col2:
+        st.subheader('Features impact to the model')
         st.image("Figs/0.7_Shap_summary_plot.png")
 
     st.write('---')
