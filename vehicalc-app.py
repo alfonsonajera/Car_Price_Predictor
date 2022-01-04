@@ -258,7 +258,7 @@ def main():
         st.set_option('deprecation.showPyplotGlobalUse', False)
         plt.title('Prediction Feature importance based on SHAP values (Bar)')
         shap.summary_plot(shap_values, df_pred, plot_type="bar")
-        
+        st.pyplot(bbox_inches='tight')
 
     with col2:
          st.image("Figs/0.7_Shap_summary_plot.png")
