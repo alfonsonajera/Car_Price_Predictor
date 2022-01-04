@@ -20,7 +20,6 @@ st.write('---')
 
 # Sidebar
 # Header of Specify Input Parameters
-st.image("vehicalc.png", use_column_width=False)
 st.sidebar.header('Specify Input Parameters')
 
     
