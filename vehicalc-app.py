@@ -245,7 +245,7 @@ def main():
     st.header('The predicted value for this cars is:')
     st.write(prediction)
     st.write('---')
-    explainer = shap.TreeExplainer(model)
+    explainer = shap.TreeExplainer(cPickle.load(bz2.BZ2File("Files/RF_price_predicting_model.pkl.pbz2", 'rb'))
 
     
     
