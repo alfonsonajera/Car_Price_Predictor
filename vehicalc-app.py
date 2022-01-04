@@ -261,9 +261,9 @@ def main():
         st.pyplot(bbox_inches='tight')
     
     with col2:
-        st.image("Figs/0.7_Shap_summary_plot.png",
+        st.image("Figs/0.7_Shap_summary_plot.png")
 
-
+    st.write('---')
     
   
 
