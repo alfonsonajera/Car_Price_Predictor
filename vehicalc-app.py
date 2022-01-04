@@ -247,8 +247,6 @@ def main():
     st.write('---')
 
     
-    compressed_model = bz2.BZ2File("Files/RF_price_predicting_model.pkl.pbz2", 'rb')
-    model = cPickle.load(compressed_model)
     explainer = shap.TreeExplainer(model)
     shap_values = explainer.shap_values(df_pred)
 
