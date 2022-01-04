@@ -64,6 +64,8 @@ def kia():
 def landrover():
     st.image("Brands/land-rover-logo.png", use_column_width=False)
 def mazda():
+    st.image("Brands/mazda-logo.png", use_column_width=False)
+def mercedes():
     st.image("Brands/mercedes-benz-logo.png", use_column_width=False)
 def mini():
     st.image("Brands/mini-logo.png", use_column_width=False)
@@ -128,6 +130,8 @@ def user_input_features():
         landrover()
     elif BRAND == "Mazda":
         mazda()
+    elif BRAND == "Mercedes-Benz":
+        mercedes()
     elif BRAND == "MINI":
         mini()
     elif BRAND == "Opel":
