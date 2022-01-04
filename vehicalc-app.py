@@ -245,7 +245,7 @@ def main():
     st.header('The predicted value for this cars is:')
     st.write(prediction)
     st.write('---')
-    
+    explainer = shap.TreeExplainer(model)
 
     
     
