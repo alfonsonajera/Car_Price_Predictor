@@ -249,14 +249,13 @@ def main():
     
     # Explaining the model's predictions using SHAP values
     
-    st.header('Feature Importance')
-
-    explainer = shap.TreeExplainer(model)
-    shap_values = explainer.shap_values(df_pred)
+    st.set_option('deprecation.showPyplotGlobalUse', False)
     
-    plt.title('Feature importance based on SHAP values (Bar)')
-    shap.summary_plot(shap_values, df_pred, plot_type="bar", show=False)
-    st.pyplot(bbox_inches='tight')
+    st.header('Features impact to the model')
+    st.image("Figs/0.7_Shap_summary_plot_bar")
+    st.image("Figs/0.7_Shap_summary_plot")
+    
+
 
     st.write('---')
     
