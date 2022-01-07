@@ -12,9 +12,8 @@ compressed_model = bz2.BZ2File("Files/RF_price_predicting_model.pkl.pbz2", 'rb')
 model = cPickle.load(compressed_model)
 
 # Title logo
-
+st.image('Vehicalc_header.png')
 st.write(""" 
-# VehiCALC
 **VehiCALC** will help you to predict Used Cars Values for the Spanish Market using a Machine Learning Algorithm updated up to 2021 to arrive at a fair value in just a few clicks!
 """)         
 st.write('---')
