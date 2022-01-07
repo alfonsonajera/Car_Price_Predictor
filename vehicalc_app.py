@@ -14,7 +14,7 @@ model = cPickle.load(compressed_model)
 # Title logo
 st.image("Brands/Vehicalc_header.png", use_column_width=True)
 st.write("""
-**VehiCALC** will help you to predict Used Cars Values for the Spanish Market up to 2021 using a Machine Learning Algorithm
+**VehiCALC** will help you to predict Used Cars Values for the Spanish Market up to 2021 using a Machine Learning Algorithm.
 """)
 st.write('---')
 
