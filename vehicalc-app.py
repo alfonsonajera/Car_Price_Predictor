@@ -12,7 +12,7 @@ compressed_model = bz2.BZ2File("Files/RF_price_predicting_model.pkl.pbz2", 'rb')
 model = cPickle.load(compressed_model)
 
 # Title logo
-st.image("Brads/Vehicalc-header", use_column_width=True)
+st.image("Brands/Vehicalc_header.png", use_column_width=True)
 st.write("""
 This app predicts **Used Cars Values**!
 """)
