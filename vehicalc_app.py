@@ -252,8 +252,8 @@ def main():
     st.set_option('deprecation.showPyplotGlobalUse', False)
     
     st.header('Features impact to the model')
-    st.image("Figs/07.Shap_summary_plot.png")
-    st.image("Figs/07.Shap_summary_plot_bar.png")
+    st.image("Figs/07_Shap_summary_plot.png")
+    st.image("Figs/07_Shap_summary_plot_bar.png")
     
 
 
