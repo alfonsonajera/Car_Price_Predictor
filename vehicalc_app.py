@@ -14,7 +14,7 @@ model = cPickle.load(compressed_model)
 # Title logo
 
 st.write(""" 
-# √ehiCALC
+# VehiCALC
 **VehiCALC** will help you to predict Used Cars Values for the Spanish Market using a Machine Learning Algorithm updated up to 2021 to arrive at a fair value in just a few clicks!
 """)         
 st.write('---')
