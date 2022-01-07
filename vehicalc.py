@@ -258,12 +258,8 @@ def main():
 
 
     st.write('---')
-    
+    st.write("Designed by Alfonso Najera del Barrio")    
   
-
-
-
- 
         
 
 
