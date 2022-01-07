@@ -253,7 +253,7 @@ def main():
     
     st.header('Features impact to the model')
    
-    st.image("Figs/0.7_Shap_summary_plots.png")
+    st.image("Figs/07.Shap_summary_plots.png")
     
 
 
