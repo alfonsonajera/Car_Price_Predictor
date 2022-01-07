@@ -14,7 +14,7 @@ model = cPickle.load(compressed_model)
 # Title logo
 st.image("Brands/Vehicalc_header.png")
 st.write("""
-Are you planning to buy or sell a car in Spain? **VehiCALC** app will help you to predict Used Cars Values for the Spanish Market up to 2021 using a Machine Learning Algorithm to arrive at a fair value in just a few clicks!
+**VehiCALC** will help you to predict Used Cars Values for the Spanish Market using a Machine Learning Algorithm updated up to 2021 to arrive at a fair value in just a few clicks!
 """)         
 st.write('---')
 
@@ -252,8 +252,8 @@ def main():
     st.set_option('deprecation.showPyplotGlobalUse', False)
     
     st.header('Features impact to the model')
-   
-    st.image("Figs/07.Shap_summary_plots.png")
+    st.image("Figs/07.Shap_summary_plot.png")
+    st.image("Figs/07.Shap_summary_plot_bar.png")
     
 
 
