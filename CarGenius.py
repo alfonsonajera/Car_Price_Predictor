@@ -47,7 +47,7 @@ side_bar = """
   <style>
     /* The whole sidebar */
     .css-1lcbmhc.e1fqkh3o0{
-      margin-top: 3.8rem;
+      margin-top: 10rem;
     }
      
      /* The display arrow */
