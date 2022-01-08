@@ -258,7 +258,7 @@ def main():
     st.info("""
     Created by Alfonso Nájera del Barrio
     [GitHub](https://youtube.com/dataprofessor/)|[LinkedIn](https://youtube.com/dataprofessor/)
-    """
+    """)
 
 
     st.write('---')
