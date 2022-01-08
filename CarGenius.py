@@ -25,7 +25,7 @@ st.markdown("""
         <a class="nav-link" href="https://github.com/alfonsonajera/Car_Price_Predictor" target="_blank">GitHub</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://www.linkedin.com/in/alfonso-n%C3%A1jera-del-barrio-66b926124/" target="_blank">Linkdn</a>
+        <a class="nav-link" href="https://www.linkedin.com/in/alfonso-n%C3%A1jera-del-barrio-66b926124/" target="_blank">LinkdIn</a>
       </li>
     </ul>
   </div>
