@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run vehicalc-app.py
+web: sh setup.sh && streamlit run vehicalc.py
