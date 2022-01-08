@@ -34,7 +34,7 @@ st.markdown("""
 </nav>
 """, unsafe_allow_html=True)
 # Title logo
-st.image('CarGenius_header.png')
+
 st.write(""" 
 **Car Genius** will help you to predict Used Cars Values for the Spanish Market using a Machine Learning Algorithm updated up to 2021 to arrive at a fair value in just a few clicks!
 """)         
