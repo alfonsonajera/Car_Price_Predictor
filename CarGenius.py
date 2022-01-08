@@ -22,20 +22,6 @@ st.write('---')
 # Sidebar
 # Header of Specify Input Parameters
 
-side_bar = """
-  <style>
-    /* The whole sidebar */
-    .css-1lcbmhc.e1fqkh3o0{
-      margin-top: 3.8rem;
-    }
-     
-     /* The display arrow */
-    .css-sg054d.e1fqkh3o3 {
-      margin-top: 5rem;
-      }
-  </style> 
-  """
-st.markdown(side_bar, unsafe_allow_html=False)
 
 st.sidebar.header('Specify Input Parameters')
  
