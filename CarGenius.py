@@ -13,7 +13,7 @@ model = cPickle.load(compressed_model)
 
 st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
 
-st.markdown(st.image("CarGenius_header.png")"""
+st.markdown(st.image("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #000000;">
   <a class="navbar-brand" href="https://youtube.com/dataprofessor" target="_blank">Car Genius</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,9 +21,6 @@ st.markdown(st.image("CarGenius_header.png")"""
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link disabled" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
       <li class="nav-item">
         <a class="nav-link" href="https://youtube.com/dataprofessor" target="_blank">YouTube</a>
       </li>
