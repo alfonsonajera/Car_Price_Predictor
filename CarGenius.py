@@ -8,8 +8,11 @@ import bz2
 import _pickle as cPickle
 import shap
 
+
 compressed_model = bz2.BZ2File("Files/RF_price_predicting_model.pkl.pbz2", 'rb')
 model = cPickle.load(compressed_model)
+
+st.set_page_config(page_title='Car Genius',page_icon=":smiley:")
 
 # Title logo
 st.image("CarGenius_header.png")
