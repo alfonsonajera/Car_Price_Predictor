@@ -255,10 +255,17 @@ def main():
     st.header('Features impact to the model')
     st.image("Figs/07_Shap_summary_plot.png")
     st.image("Figs/07_Shap_summary_plot_bar.png")
-    st.info("""
-    Created by Alfonso Nájera del Barrio
-    [GitHub](https://youtube.com/dataprofessor/)|[LinkedIn](https://youtube.com/dataprofessor/)
-    """)
+    st.info([
+        "Designed in ",
+        link('https://streamlit.io/',
+            image('https://avatars3.githubusercontent.com/u/45109972?s=400&v=4',
+                  width=px(25), height=px(25))),
+        " by Carlos Espejo Peña",
+        br(),
+        link("https://www.linkedin.com/in/carlosespejopena/", image('https://drive.google.com/uc?export=view&id=1nx0u9GeUyYttqyju6Z1824UCqto6hXZv')),
+        " | ",
+        link("https://github.com/caresppen", image('https://drive.google.com/uc?export=view&id=17_77FAziJKdyZaRkjzlGFTKaPAKGdszl')),
+    ]
 
 
     st.write('---')
