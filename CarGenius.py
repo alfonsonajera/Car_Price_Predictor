@@ -10,25 +10,6 @@ import shap
 
 compressed_model = bz2.BZ2File("Files/RF_price_predicting_model.pkl.pbz2", 'rb')
 model = cPickle.load(compressed_model)
-st.markdown(""" 
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #000000;">
-  <a class="navbar-brand" href="#" target="_blank">Car Genius</a> 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="https://github.com/alfonsonajera/Car_Price_Predictor" target="_blank">GitHub</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.linkedin.com/in/alfonso-n%C3%A1jera-del-barrio-66b926124/" target="_blank">LinkdIn</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-""", unsafe_allow_html=False) 
 
 # Title logo
 st.image("CarGenius_header.png")
