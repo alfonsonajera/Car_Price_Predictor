@@ -22,10 +22,10 @@ st.markdown("""
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="https://youtube.com/dataprofessor" target="_blank">YouTube</a>
+        <a class="nav-link" href="https://github.com/alfonsonajera/Car_Price_Predictor" target="_blank">GitHub</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://twitter.com/thedataprof" target="_blank">Twitter</a>
+        <a class="nav-link" href="https://www.linkedin.com/in/alfonso-n%C3%A1jera-del-barrio-66b926124/" target="_blank">Linkdn</a>
       </li>
     </ul>
   </div>
