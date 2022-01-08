@@ -290,7 +290,7 @@ def main():
     st.header('Features impact to the model')
     st.image("Figs/07_Shap_summary_plot.png")
     st.image("Figs/07_Shap_summary_plot_bar.png")
-    st.info('Created by Alfonso Nájera del Barrio in ![Cool Image](CarGenius.png)')
+    st.info('Created by Alfonso Nájera del Barrio in [Streamlit](https://streamlit.io/))'
 
 
     st.write('---')
