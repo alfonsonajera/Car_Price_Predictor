@@ -255,7 +255,8 @@ def main():
     st.header('Features impact to the model')
     st.image("Figs/07_Shap_summary_plot.png")
     st.image("Figs/07_Shap_summary_plot_bar.png")
-    st.info('Created by Alfonso Nájera del Barrio [GitHub](https://youtube.com/dataprofessor/)|[LinkedIn](https://youtube.com/dataprofessor/) ')
+    st.info('Created by Alfonso Nájera del Barrio 
+            [GitHub](https://youtube.com/dataprofessor/)|[LinkedIn](https://youtube.com/dataprofessor/) ')
 
 
     st.write('---')
