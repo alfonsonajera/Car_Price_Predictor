@@ -10,20 +10,7 @@ import shap
 
 compressed_model = bz2.BZ2File("Files/RF_price_predicting_model.pkl.pbz2", 'rb')
 model = cPickle.load(compressed_model)
-side_bar = """
-  <style>
-    /* The whole sidebar */
-    .css-1lcbmhc.e1fqkh3o0{
-      margin-top: 3.8rem;
-    }
-     
-     /* The display arrow */
-    .css-sg054d.e1fqkh3o3 {
-      margin-top: 5rem;
-      }
-  </style> 
-  """
-st.markdown(side_bar, unsafe_allow_html=True)
+
 st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
 
 st.markdown("""
