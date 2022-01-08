@@ -265,7 +265,7 @@ def main():
         link("https://www.linkedin.com/in/carlosespejopena/", image('https://drive.google.com/uc?export=view&id=1nx0u9GeUyYttqyju6Z1824UCqto6hXZv')),
         " | ",
         link("https://github.com/caresppen", image('https://drive.google.com/uc?export=view&id=17_77FAziJKdyZaRkjzlGFTKaPAKGdszl')),
-    ]
+    ])
 
 
     st.write('---')
