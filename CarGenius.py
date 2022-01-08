@@ -54,7 +54,7 @@ side_bar = """
       }
   </style> 
   """
-st.markdown(side_bar, unsafe_allow_html=True)
+st.markdown(side_bar, unsafe_allow_html=False)
 
 st.sidebar.header('Specify Input Parameters')
  
