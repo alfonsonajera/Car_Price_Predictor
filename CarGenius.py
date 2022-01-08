@@ -255,17 +255,13 @@ def main():
     st.header('Features impact to the model')
     st.image("Figs/07_Shap_summary_plot.png")
     st.image("Figs/07_Shap_summary_plot_bar.png")
-    st.info(""Created by Alfonso Nájera del Barrio"
-            [GitHub](https://youtube.com/dataprofessor/)|[LinkedIn](https://youtube.com/dataprofessor/) ")
+    st.info("""
+    Created by Alfonso Nájera del Barrio
+    [GitHub](https://youtube.com/dataprofessor/)|[LinkedIn](https://youtube.com/dataprofessor/)
+    """
 
 
     st.write('---')
-    st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
-
-
-  
-        
-
-
+ 
 if __name__ == "__main__":
     main()
