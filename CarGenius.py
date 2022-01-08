@@ -257,7 +257,7 @@ def main():
     st.image("Figs/07_Shap_summary_plot_bar.png")
     
     st.info("Designed by Alfonso Nájera del Barrio \n
-    [Data Professor](https://youtube.com/dataprofessor/))'
+    [Data Professor](https://youtube.com/dataprofessor/)")
 
 
 
