@@ -57,10 +57,9 @@ side_bar = """
   </style> 
   """
 st.markdown(side_bar, unsafe_allow_html=True)
-st.sidebar.image("CarGenius_header.png")
-st.sidebar.header('Specify Input Parameters')
 
-    
+st.sidebar.header('Specify Input Parameters')
+ 
 # Main Panel
 
 # Print specified input parameters
@@ -291,7 +290,7 @@ def main():
     st.header('Features impact to the model')
     st.image("Figs/07_Shap_summary_plot.png")
     st.image("Figs/07_Shap_summary_plot_bar.png")
-    st.info('Created by Alfonso Nájera del Barrio in [Streamlit](https://streamlit.io/)')
+    st.info('Created by Alfonso Nájera del Barrio')
 
 
     st.write('---')
