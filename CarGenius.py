@@ -57,7 +57,7 @@ side_bar = """
   </style> 
   """
 st.markdown(side_bar, unsafe_allow_html=True)
-st.sidebar.image("cargenius.png"
+st.sidebar.image("cargenius.png")
 st.sidebar.header('Specify Input Parameters')
 
     
