@@ -15,7 +15,7 @@ Master Thesis in Data Science at [KSchool](https://kschool.com/) (2021-2022)
 1. [Repository Structure](#Repository-structure)
 2. [Introduction](#Introduction)
 3. [Methodology](#Methodology)
-4. [User Manual](#User-manual)
+4. [Requirements](#Requirements)
 5. [Conclusions](#Conclusions)
 
 <a name="Repository-structure"></a>
@@ -58,8 +58,8 @@ The project will cover all phases related to a Data Science project, involving t
 
 
 
-<a name="User-manual"></a>
-## User Manual
+<a name="Requirements"></a>
+## Requirements
 
 ### Dependencies
 For the correct execution of the project you will need the following dependencies installed on your anaconda environment:
