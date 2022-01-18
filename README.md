@@ -31,6 +31,41 @@ The project will cover all phases related to a Data Science project, involving t
 <a name="User-manual"></a>
 ## User Manual
 
+### Dependencies
+For the correct execution of the project you will need the following dependencies installed on your anaconda environment:
+
+- pandas 
+
+- numpy
+
+- matplotlib
+
+- geopandas
+
+- BeautifulSoup
+
+- scikit-learn
+
+- pickle
+
+- streamlit
+
+- heroku
+
+### User Manual
+
+The app has been designed to be very easy to use . When you access the webpage https://cargenius.herokuapp.com/ you will see:
+
+Header: App logo and a short description about it
+
+Sidebar: located on the left part of the page will allow users to specify their car options to allow the algorithm to make a prediction.
+
+Specified Input parameters summary and the result of the prediction
+
+Model predictions explanation using SHAP values
+
+The user only needs to input the options of the car they want to make a prediction of by using the sidebar on the left of the screen “Specify Input Parameters''. The algorithm will run automatically and the predicted price for the car will appear under the “The predicted value for this cars is”.
+
 
 <a name="Conclusions"></a>
 ## Conclusions
