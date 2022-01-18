@@ -1,10 +1,48 @@
 ![CarGenius](CarGenius_header.png)
-This project has been developed by [Alfonso Najera del Barrio](https://www.linkedin.com/in/alfonso-n%C3%A1jera-del-barrio-66b926124/)
 
-Master Thesis in Data Science at KSchool (2021-2022)
+**Author**: [Alfonso Najera del Barrio](https://www.linkedin.com/in/alfonso-n%C3%A1jera-del-barrio-66b926124/)
 
-# Car Genius
+Master Thesis in Data Science at [KSchool](https://kschool.com/) (2021-2022)
+
+## Table of Contents
+
+1. [Repository Structure](#Repository-structure)
+2. [Introduction](#Introduction)
+3. [Methodology](#Methodology)
+4. [User Manual](#User-manual)
+5. [Conclusions](#Conclusions)
+
+<a name="Repository-structure"></a>
+## Repository Structure
+
+
+
+<a name="Introduction"></a>
+## Introduction
 Car Genius is a used-car price predictor developed for my thesis in the Data Science Master from KSchool. The name is the result of combining the words Car and Genius , the last one as a synonym of Guru related to the aim of this project which is to build a machine learning  algorithm able to predict the price of any used car in Spain based on the current used cars market and applying the knowledge acquired during this master.
 
 The project will cover all phases related to a Data Science project, involving the data acquisition and transformation, analysis, including the evaluation of the different machine learning models and will end with a frontend or visualization tool that will allow users to interact with the algorithm.
 
+<a name="Methodology"></a>
+## Methodology
+
+
+
+<a name="User-manual"></a>
+## User Manual
+
+
+<a name="Conclusions"></a>
+## Conclusions
+
+The purpose of this project was to create an accurate algorithm able to predict the used cars value for the Spanish Market and the Car Genius app serves the purpose it was developed for in a very friendly and easy to use format.
+
+The project has been developed end to end, from the raw data extraction to an interactive app where the users can input the parameters to the algorithm to make predictions. 
+
+During the project, more than 30,000 used cars ads were studied and although it is not a large number of ads for a Machine Learning project, the predictions obtained have been quite good, reaching an 89% accuracy using the Random Forest Model.
+
+
+
+The most time consuming part of the project was the data source selection and the data cleaning. Once you decide what your work is going to be about you have to start thinking about how you will get the data for the study and find those sites with the relevant information and open to be scrapped. After that, data cleaning is one of the keys of the project, with quality data and data cleaned accordingly (formattings, outliers, re-groupings, checking inconsistencies…) the model will be able to provide better results.
+
+For the future, it will be interesting to monitor these used car values on a temporary basis, in order to help buyers and sellers to choose the best moment for a sale or a purchase and help the users to see if a car model is being appreciated or depreciated.
