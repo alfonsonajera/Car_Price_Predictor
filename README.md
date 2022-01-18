@@ -15,6 +15,17 @@ Master Thesis in Data Science at [KSchool](https://kschool.com/) (2021-2022)
 <a name="Repository-structure"></a>
 ## Repository Structure
 
+In the repository tree you will find the following folders:
+
+* Brands : includes all car makes images .png used for the app visualiation
+
+* Csv : includes all .csv files exported during the project
+
+* Figs : figs saved during the project
+
+* Files : files needed for the project, including the files downloaded to be able to use geopandas and the pickle file saved with the model
+
+* Notebooks : included all jupyter notebooks, with the coding including all the cells executed and their results, used during the project for every process
 
 
 <a name="Introduction"></a>
