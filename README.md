@@ -1,4 +1,8 @@
 ![CarGenius](CarGenius_header.png)
+This project has been developed by [Alfonso Najera del Barrio](https://www.linkedin.com/in/alfonso-n%C3%A1jera-del-barrio-66b926124/)
+
+Master Thesis in Data Science at KSchool (2021-2022)
+
 # Car Genius
 Car Genius is a used-car price predictor developed for my thesis in the Data Science Master from KSchool. The name is the result of combining the words Car and Genius , the last one as a synonym of Guru related to the aim of this project which is to build a machine learning  algorithm able to predict the price of any used car in Spain based on the current used cars market and applying the knowledge acquired during this master.
 
