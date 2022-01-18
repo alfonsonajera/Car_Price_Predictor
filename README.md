@@ -1,8 +1,14 @@
 ![CarGenius](CarGenius_header.png)
 
+[**Car Genius**](https://cargenius.herokuapp.com/) will help you to predict Used Cars Values for the Spanish Market using a Machine Learning Algorithm updated up to 2021 to arrive at a fair value in just a few clicks!
+
 **Author**: [Alfonso Najera del Barrio](https://www.linkedin.com/in/alfonso-n%C3%A1jera-del-barrio-66b926124/)
 
 Master Thesis in Data Science at [KSchool](https://kschool.com/) (2021-2022)
+
+
+
+
 
 ## Table of Contents
 
