@@ -96,6 +96,7 @@ Model predictions explanation using SHAP values
 
 The user only needs to input the options of the car they want to make a prediction of by using the sidebar on the left of the screen “Specify Input Parameters''. The algorithm will run automatically and the predicted price for the car will appear under the “The predicted value for this cars is”.
 
+[![IMAGE ALT TEXT HERE](Brands/Tutorial.png)](https://www.youtube.com/watch?v=cA4UpivGqLY)
 
 <a name="Conclusions"></a>
 ## Conclusions
