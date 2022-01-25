@@ -247,7 +247,7 @@ def main():
   
   
 
-    st.header('The predicted value for this cars is:')
+    st.header('The predicted value for this car is:')
     st.write(prediction)
     st.write('---')
     
