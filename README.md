@@ -55,6 +55,16 @@ The project will cover all phases related to a Data Science project, involving t
 
 <a name="Methodology"></a>
 ## Methodology
+### Raw Data
+What data have I used? For this project I have chosen as the datasource the website [Autoscout 24](https://www.autoscout24.es/), the biggest and most important online portal in Europe dedicated to used cars and one of the most famous in Spain. This portal currently receives 10M of visits a month and it contains 2M of vehicle ads in Europe (“AutoScout24”). For this purpose I have decided to use the technique Web Scraping to obtain the maximum amount of ads from the datasource.
+
+### Data Cleaning and Analysis
+The main goal during this process is to transform the columns with the raw data from every column extracted to a cleaner and more useful and readable and continue with an exploratory analysis of each feature. It is important to analyze all the data extracted to see the data distribution along with the different information obtained.
+
+### Machine Learning Techniques
+During this step we will apply feature engineering to the model in order to transform our cleaned data frame into features that can be used in our predictive model and later on we will build the different models using different Machine Learning techniques to be able to select which model is more suitable for the project.
+
+I also used Randomized Search CV to find the best parameters.
 
 
 
@@ -79,6 +89,8 @@ For the correct execution of the project you will need the following dependencie
 - pickle
 
 - streamlit
+
+- shap
 
 - heroku
 
