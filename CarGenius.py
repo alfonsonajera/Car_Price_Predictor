@@ -256,8 +256,8 @@ def main():
     st.set_option('deprecation.showPyplotGlobalUse', False)
     
     st.header('Features impact to the model')
-    st.image("Figs/07_Shap_summary_plot.png")
-    st.image("Figs/07_Shap_summary_plot_bar.png")
+    st.image("Figs/0.7_Shap_summary_plot.png")
+    st.image("Figs/0.7_Shap_summary_plot_bar.png")
     
     st.info("Designed by Alfonso Nájera del Barrio [LinkedIn](https://www.linkedin.com/in/alfonso-n%C3%A1jera-del-barrio-66b926124/) | [GitHub](https://github.com/alfonsonajera/Car_Price_Predictor)")
 
