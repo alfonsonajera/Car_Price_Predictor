@@ -74,25 +74,29 @@ I also used Randomized Search CV to find the best parameters.
 ### Dependencies
 For the correct execution of the project you will need the following dependencies installed on your anaconda environment:
 
-- pandas 
+- Pandas 
 
-- numpy
+- Numpy
 
-- matplotlib
+- Matplotlib
 
-- geopandas
+- Geopandas
 
-- BeautifulSoup
+- Bs4
 
-- scikit-learn
+- Lxml
 
-- pickle
+- Seaborn
 
-- streamlit
+- Scikit-learn
 
-- shap
+- Pickle
 
-- heroku
+- Streamlit
+
+- Shap
+
+- Heroku
 
 ### User Manual
 
