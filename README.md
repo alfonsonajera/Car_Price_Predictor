@@ -44,7 +44,9 @@ You will find also the following **files**:
 
 * requirements.txt : set up files for heroku app
 
-* setup.sh :set up files for heroku app
+* setup.sh : set up files for heroku app
+
+* environment_droplet.yml : dependency/package manager
 
 
 <a name="Introduction"></a>
