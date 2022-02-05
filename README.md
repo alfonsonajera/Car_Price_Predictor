@@ -48,6 +48,8 @@ You will find also the following **files**:
 
 * environment_droplet.yml : dependency/package manager
 
+* Memoria_Car_Price_Predictor : Memoria of the project
+
 
 <a name="Introduction"></a>
 ## Introduction
