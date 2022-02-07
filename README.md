@@ -68,9 +68,10 @@ The main goal during this process is to transform the columns with the raw data 
 ### Machine Learning Techniques
 During this step we will apply feature engineering to the model in order to transform our cleaned data frame into features that can be used in our predictive model and later on we will build the different models using different Machine Learning techniques to be able to select which model is more suitable for the project.
 
-I also used Randomized Search CV to find the best parameters.
+I also used Randomized Search CV to find the best parameters for the model.
 
-
+### Front-end
+The project concludes with the developement of a fron-end app that allows the user to interact with the algorithm. Basically the users will get an estimated value for the desired car accordingly with the car specificities thay input on the app.
 
 <a name="Requirements"></a>
 ## Requirements
